@@ -2,6 +2,7 @@ TM1637
 ======
 Arduino library for TM1637 (LED Driver)
 
+![image](http://www.seeedstudio.com/depot/images/product/4-Digital%20Display_01.jpg)
 
 Description
 -----------
