@@ -41,9 +41,9 @@ public:
   //!
   //! The setting takes effect when a command is given to change the data being displayed.
   //!
-  //! @param brightness A number from 0 (lowest brightness) to 7 (highest brightness)
+  //! @param brightness A number from 0 (Off) to 8 (highest brightness)
   void setBrightness(uint8_t brightness);
-
+  
   //! Display arbitrary data on the module
   //!
   //! This function receives raw segment values as input and displays them. The segment data

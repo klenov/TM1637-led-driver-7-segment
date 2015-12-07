@@ -73,7 +73,11 @@ void TM1637::begin(uint8_t pinClk, uint8_t pinDIO)
 
 void TM1637::setBrightness(uint8_t brightness)
 {
-  m_brightness = constrain(brightness, 0, 7) + 8;
+  if(brightness > 0){
+  	m_brightness = ((brightness - 1) & 0x07) | 0x08;
+  } else {
+    m_brightness = 0x00;
+  }
 }
 
 void TM1637::setSegments(const uint8_t segments[], uint8_t length, uint8_t pos)
